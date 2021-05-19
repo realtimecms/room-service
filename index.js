@@ -11,7 +11,7 @@ const definition = app.createServiceDefinition({
 })
 
 const { getAccess, hasRole, checkIfRole, getPublicInfo } =
-    require("../access-control-service/access.js")(app, definition)
+    require("../access-control-service/access.js")(definition)
 
 /*
 async function checkIfOwner(room, { client, visibilityTest }) {
